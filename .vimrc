@@ -50,3 +50,6 @@ let g:phpqa_messdetector_autorun = 0
 " Don't run codesniffer on save (default = 1)
 let g:phpqa_codesniffer_autorun = 1
 let g:phpqa_codesniffer_args = "--standard=PSR2"
+
+" Coluna 80 caracteres
+set colorcolumn=80
