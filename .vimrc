@@ -53,3 +53,6 @@ let g:phpqa_codesniffer_args = "--standard=PSR2"
 
 " Coluna 80 caracteres
 set colorcolumn=80
+
+" Ativando syntax highlight para templates twig
+au BufRead,BufNewFile *.html set filetype=html.twig
