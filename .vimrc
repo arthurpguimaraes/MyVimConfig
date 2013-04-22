@@ -37,6 +37,11 @@ set mouse=a
 " sempre mostrar statusline
 set laststatus=2
 
+" Status line otimizada
+if has("statusline")
+    set statusline=%<%f\ %h%m%r%=%{\"[\".(&fenc==\"\"?&enc:&fenc).((exists(\"+bomb\")\ &&\ &bomb)?\",B\":\"\").\"]\ \"}%k\ %-14.(%l,%c%V%)\ %P
+endif
+
 " Atalhos
 map <F2> :NERDTreeToggle<CR>
 
